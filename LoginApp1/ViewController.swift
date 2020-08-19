@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let emailField = UITextField()
         emailField.placeholder = "Email Address"
         emailField.layer.borderWidth = 1
-        emailField.autocapitalizationType = .none
+        emailField.autocapitalizationType = .none 
         emailField.layer.borderColor = UIColor.black.cgColor
         emailField.backgroundColor = .white
         emailField.leftViewMode = .always
