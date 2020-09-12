@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     private let button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemPink
+        button.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Continue", for: .normal)
         return button
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     
     private let signOutButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemPink
+        button.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Log Out", for: .normal)
         return button
@@ -69,7 +69,8 @@ class ViewController: UIViewController {
         view.addSubview(emailField)
         view.addSubview(passField)
         view.addSubview(button)
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = #colorLiteral(red: 0.8021834493, green: 0.9710404277, blue: 0.8891374469, alpha: 1)
+            //.systemYellow
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     
         if FirebaseAuth.Auth.auth().currentUser != nil {
